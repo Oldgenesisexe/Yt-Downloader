@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YT Downloader Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 20px; background: #f4f4f4; }
+        .container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input { width: 80%; padding: 10px; margin-bottom: 10px; }
+        button { padding: 10px 20px; background: #ff0000; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Downloader</h1>
+        <form action="/download" method="post">
+            <input type="text" name="url" placeholder="Tempel Link YouTube..." required><br>
+            <select name="mode" style="padding: 10px; margin-bottom: 10px;">
+                <option value="video">Video (MP4)</option>
+                <option value="audio">Audio (MP3)</option>
+            </select><br>
+            <button type="submit">Download</button>
+        </form>
+    </div>
+</body>
+</html>
