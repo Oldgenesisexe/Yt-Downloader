@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-DOWNLOAD_FOLDER = 'downloads'
+DOWNLOAD_FOLDER = '/tmp/downloads'
 if not os.path.exists(DOWNLOAD_FOLDER):
     os.makedirs(DOWNLOAD_FOLDER)
 
